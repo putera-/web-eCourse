@@ -243,6 +243,7 @@
                 <div class="row">
                     <div class="copy">
                         <p>
+                            {{ isDark ? 'DARK' : 'LIGHT' }}
                             Copyright @RehabHatiofficial. All Rights Reserved by
                             <a href="#" target="_blank"> Rehab Hati E-Course</a>
                         </p>
@@ -252,8 +253,12 @@
         </div>
     </div>
 
-    <div class="switch-box"><label id="switch" class="switch"><input type="checkbox" onchange="toggleTheme()"
-                id="slider"><span class="slider round"></span></label></div>
+    <div class="switch-box">
+        <label id="switch" class="switch">
+            <input type="checkbox" @change="toggleDark()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
     <a href="#" class="scroll-top wow animate__animated animate__bounceInDown">
         <IconsAngleDoubleUp style="width: 16px; height: 16px; fill:#fff" />
     </a>
@@ -262,6 +267,15 @@
 <script setup lang="ts">
 // Preloader
 const isLoading = ref(true);
+import { useDark, useToggle } from "@vueuse/core";
+const isDark = useDark({
+    selector: "html",
+    attribute: "class",
+    valueDark: "theme-dark",
+    valueLight: "theme-light",
+});
+const toggleDark = useToggle(isDark);
+
 setTimeout(() => {
     isLoading.value = false;
 }, 1200);
