@@ -78,7 +78,6 @@
     width: 100%;
     padding: 30px;
     height: 100%;
-    padding-bottom: 10px;
     border-radius: 30px;
 }
 
@@ -156,6 +155,7 @@
 
 .course-slider-area .course-slider-btn .border-btn {
     padding: 18px 30px;
+    margin-left: 10px;
 }
 
 .course-slider-area .course-slider-btn .border-btn:hover {

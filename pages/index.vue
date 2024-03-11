@@ -3,6 +3,10 @@
 
     <IndexServiceArea />
 
+    <IndexRegular />
+
+    <IndexWhyJoin />
+
     <IndexHomeAdmission />
 
     <IndexSpecialHours />
@@ -17,6 +21,7 @@
 </template>
 
 <script setup lang="ts">
+import 'vue3-carousel/dist/carousel.css'
 </script>
 
 <style scoped></style>
