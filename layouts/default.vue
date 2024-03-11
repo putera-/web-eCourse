@@ -32,4 +32,5 @@ setTimeout(() => {
 @import '~/assets/css/mainmenu.css';
 @import '~/assets/css/style.css';
 @import '~/assets/css/dark.css';
+@import '~/assets/css/responsive.css';
 </style>

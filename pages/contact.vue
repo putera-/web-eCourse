@@ -127,7 +127,7 @@
 
 </script>
 
-<style scoped>
+<style>
 .contact {
     position: relative;
     position: relative;
