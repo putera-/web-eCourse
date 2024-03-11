@@ -20,6 +20,7 @@
 </template>
 
 <script setup lang="ts">
+import 'animate.css';
 // Preloader
 const isLoading = ref(true);
 

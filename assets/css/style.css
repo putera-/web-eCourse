@@ -539,32 +539,40 @@ a.scroll-top i {
     color: #fff;
 }
 
-.slider-area .owl-item.active .slider-tittle.one h1 {
+.slider-area .carousel-item .slider-tittle {
+    opacity: 0;
+}
+
+.slider-area .carousel-item.active .slider-tittle {
+    opacity: 1;
+}
+
+.slider-area .carousel-item.active .slider-tittle.one h1 {
     -webkit-animation: 1.5s .2s fadeInUpBig both;
     animation: 1.5s .2s fadeInUpBig both;
 }
 
-.slider-area .owl-item.active .slider-tittle.one p {
+.slider-area .carousel-item.active .slider-tittle.one p {
     -webkit-animation: 1.5s .2s fadeInDownBig both;
     animation: 1.5s .2s fadeInDownBig both;
 }
 
-.slider-area .owl-item.active .slider-tittle.two h1 {
+.slider-area .carousel-item.active .slider-tittle.two h1 {
     -webkit-animation: 1.5s .2s fadeInUpBig both;
     animation: 1.5s .2s fadeInUpBig both;
 }
 
-.slider-area .owl-item.active .slider-tittle.two p {
+.slider-area .carousel-item.active .slider-tittle.two p {
     -webkit-animation: 1.5s .2s fadeInDownBig both;
     animation: 1.5s .2s fadeInDownBig both;
 }
 
-.slider-area .owl-item.active .slider-btn.btn1 a {
+.slider-area .carousel-item.active .slider-btn.btn1 a {
     -webkit-animation: 2.5s .2s fadeInUpBig both;
     animation: 2.5s .2s fadeInUpBig both;
 }
 
-.slider-area .owl-item.active .slider-btn.btn2 a {
+.slider-area .carousel-item.active .slider-btn.btn2 a {
     -webkit-animation: 2.5s .2s fadeInUpBig both;
     animation: 2.5s .2s fadeInUpBig both;
 }
