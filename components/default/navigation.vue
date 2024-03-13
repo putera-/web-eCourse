@@ -19,19 +19,19 @@
                                 <NuxtLink to="/" class="nav-link">Home </NuxtLink>
                             </li>
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">About</a>
+                                <NuxtLink to="/about" class="nav-link">About</NuxtLink>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link dropdown-toggle">Classes</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="classes.html" class="nav-link">Classes</a>
+                                        <a href="#" class="nav-link">Classes</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="special-class.html" class="nav-link">Special Courses</a>
+                                        <a href="#" class="nav-link">Special Courses</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="single-class.html" class="nav-link">Classes Details</a>
+                                        <a href="#" class="nav-link">Classes Details</a>
                                     </li>
                                 </ul>
                             </li>
@@ -39,10 +39,10 @@
                                 <a href="#" class="nav-link dropdown-toggle">Events</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="events.html" class="nav-link">Events</a>
+                                        <a href="#" class="nav-link">Events</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="single-events.html" class="nav-link">Events Details</a>
+                                        <a href="#" class="nav-link">Events Details</a>
                                     </li>
                                 </ul>
                             </li>
@@ -50,10 +50,10 @@
                                 <a href="#" class="nav-link dropdown-toggle">News</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="news.html" class="nav-link">News</a>
+                                        <a href="#" class="nav-link">News</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="single-news.html" class="nav-link">News Details</a>
+                                        <a href="#" class="nav-link">News Details</a>
                                     </li>
                                 </ul>
                             </li>
@@ -61,45 +61,10 @@
                                 <a href="#" class="nav-link dropdown-toggle">Teachers</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="single-teacher.html" class="nav-link">Teachers</a>
+                                        <a href="#" class="nav-link">Teachers</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="single-teacher.html" class="nav-link">Teachers Details</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link dropdown-toggle">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="admission.html" class="nav-link">Admission</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="pricing.html" class="nav-link">Pricing</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="gallery.html" class="nav-link">Gallery</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="testimonials.html" class="nav-link">Testimonials</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="singnup.html" class="nav-link">Signup</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="signin.html" class="nav-link">Signin</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="404.html" class="nav-link">Error 404</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="faq.html" class="nav-link">FAQ</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="terms&condition.html" class="nav-link">Terms & Conditions</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="privecy.html" class="nav-link">Privacy Policy</a>
+                                        <a href="#" class="nav-link">Teachers Details</a>
                                     </li>
                                 </ul>
                             </li>
