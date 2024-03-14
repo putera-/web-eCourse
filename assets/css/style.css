@@ -1532,9 +1532,11 @@ a.scroll-top i {
     color: #616161;
 }
 
-.single-class-area .class-content-right .class-list li a i {
-    font-size: 12px;
+.single-class-area .class-content-right .class-list li a svg {
     margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    fill: #616161
 }
 
 .single-class-area .class-content-right .class-list li a::before {
@@ -3067,30 +3069,12 @@ a.scroll-top i {
     padding: 75px 0;
 }
 
-.faq-area .faq-content {
-    margin: 0 auto;
+.faq-area .faq-content .accordion-item {
+    border: 0;
 }
 
-.faq-area .faq-content .faq-accordion .section-tittle h2 {
-    margin-bottom: 40px;
-}
-
-.faq-area .faq-content .faq-accordion .accordion {
-    padding: 0;
-    margin: 0;
-}
-
-.faq-area .faq-content .faq-accordion .accordion .accordion-item {
-    display: block;
-    margin-bottom: 12px;
-}
-
-.faq-area .faq-content .faq-accordion .accordion .accordion-item:last-child {
-    margin-bottom: 0;
-}
-
-.faq-area .faq-content .faq-accordion .accordion .accordion-item .accordion-title {
-    padding: 15px 20px;
+.faq-area .faq-content .accordion-item .accordion-header {
+    /* padding: 15px 20px; */
     color: #BA8324;
     position: relative;
     background: transparent;
@@ -3099,44 +3083,7 @@ a.scroll-top i {
     font-weight: 600;
     display: block;
     border: 1px solid #BA8324;
-}
-
-.faq-area .faq-content .faq-accordion .accordion .accordion-item .accordion-title i {
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: #BA8324;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    font-size: 15px;
-}
-
-.faq-area .faq-content .faq-accordion .accordion .accordion-item .accordion-title.active {
-    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-    background-color: #fff;
-}
-
-.faq-area .faq-content .faq-accordion .accordion .accordion-item .accordion-title.active i::before {
-    content: "\f068";
-}
-
-.faq-area .faq-content .faq-accordion .accordion .accordion-item .accordion-content {
-    display: none;
-    background-color: #fff;
-    margin-bottom: 0;
-    padding: 20px 15px;
-    font-size: 15px;
-    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-    z-index: 1;
-    position: relative;
-}
-
-.faq-area .faq-content .faq-accordion .accordion .accordion-item .accordion-content.show {
-    display: block;
+    margin-bottom: 10px;
 }
 
 .testimonials {

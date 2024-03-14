@@ -25,17 +25,14 @@
                                 <a href="#" class="nav-link dropdown-toggle">Classes</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link">Classes</a>
+                                        <NuxtLink to="/classes" class="nav-link">Classes</NuxtLink>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link">Special Courses</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Classes Details</a>
+                                        <NuxtLink to="/single-class" class="nav-link">Classes Details</NuxtLink>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a href="#" class="nav-link dropdown-toggle">Events</a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -67,7 +64,7 @@
                                         <a href="#" class="nav-link">Teachers Details</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <NuxtLink to="/contact" class="nav-link">Contact </NuxtLink>
                             </li>
