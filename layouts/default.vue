@@ -30,7 +30,7 @@ setTimeout(() => {
 </script>
 
 <style>
-@import '~/assets/css/mainmenu.css';
+/* @import '~/assets/css/mainmenu.css'; */
 @import '~/assets/css/style.css';
 @import '~/assets/css/dark.css';
 @import '~/assets/css/responsive.css';
