@@ -59,9 +59,9 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-    middleware: ['auth']
-})
+// definePageMeta({
+//     middleware: ['auth']
+// })
 
 const AuthStore = useAuthStore();
 
@@ -70,7 +70,7 @@ const formLogin = ref({
     password: ''
 });
 const doLogin = async () => {
-    await AuthStore.login(formLogin.value);
+    // await AuthStore.login(formLogin.value);
 }
 
 </script>
