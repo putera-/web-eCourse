@@ -1,8 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   modules: [
-    'usebootstrap'
+    'usebootstrap',
+    '@pinia/nuxt'
   ],
   usebootstrap: {
     bootstrap: {
@@ -14,5 +15,12 @@ export default defineNuxtConfig({
   },
   css: [
     "bootstrap/scss/bootstrap.scss"
-  ]
+  ],
+  runtimeConfig: {
+    apiUri: '', // can be overridden by NUXT_API_URI environment variable
+    public: {
+      apiUri: '', // can be overridden by NUXT_PUBLIC_API_URI environment variable
+    }
+  },
+  ssr: false
 })

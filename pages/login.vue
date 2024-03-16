@@ -25,27 +25,27 @@
                 <div class="col-lg-6">
                     <div class="signup-form">
                         <h2>Welcome Back!</h2>
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="User name">
-                                    </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="text" v-model="formLogin.email" class="form-control"
+                                        placeholder="Email">
                                 </div>
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Password">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <NuxtLink to="/" class="box-btn">
-                                        Sign In
-                                    </NuxtLink>
-                                </div>
-                                <span class="already">New to Rehab Hati! <NuxtLink to="/signup">Sign Up</NuxtLink>
-                                </span>
                             </div>
-                        </form>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input type="password" v-model="formLogin.password" class="form-control"
+                                        placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button @click="doLogin" class="box-btn">
+                                    Sign In
+                                </button>
+                            </div>
+                            <span class="already">New to Rehab Hati! <NuxtLink to="/signup">Sign Up</NuxtLink>
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -59,6 +59,19 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+    middleware: ['auth']
+})
+
+const AuthStore = useAuthStore();
+
+const formLogin = ref({
+    email: '',
+    password: ''
+});
+const doLogin = async () => {
+    await AuthStore.login(formLogin.value);
+}
 
 </script>
 

@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@pinia/nuxt": "^0.5.1",
     "@vueuse/core": "^10.9.0",
     "animate.css": "^4.1.1",
+    "joi": "^17.12.2",
     "nuxt": "^3.10.3",
+    "pinia": "^2.1.7",
     "usebootstrap": "^3.5.3",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",

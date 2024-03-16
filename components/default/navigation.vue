@@ -25,7 +25,17 @@
                         <NavItem>
                             <NuxtLink to="/contact" class="nav-link">Contact </NuxtLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItemDropdown v-if="Auth.user">
+                            <NavItemDropdownToggle class="avatar">
+                                <b-div rounded="circle" />
+                                {{ Auth.user.name }}
+                            </NavItemDropdownToggle>
+                            <DropdownMenu>
+                                <NuxtLink to="/" class="nav-link">Profile</NuxtLink>
+                                <div @click="doLogout" class="nav-link" id="logout">Logout</div>
+                            </DropdownMenu>
+                        </NavItemDropdown>
+                        <NavItem v-else>
                             <NuxtLink to="/login" class="nav-link">Login </NuxtLink>
                         </NavItem>
                     </NavbarNavList>
@@ -35,7 +45,32 @@
     </div>
 </template>
 
+<script setup lang="ts">
+const Auth = useAuthStore();
+
+const doLogout = async () => {
+    await Auth.logout();
+}
+
+</script>
+
 <style scoped>
+#logout {
+    cursor: pointer;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.avatar>div {
+    width: 35px;
+    height: 35px;
+    background-color: gray;
+}
+
 .navbar-area {
     background-color: transparent;
     -webkit-transition: 0.3s;
@@ -56,9 +91,23 @@
     display: none;
 }
 
-.main-nav {
-    padding-left: 20px;
-    padding-right: 20px;
+.nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-link:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+.dropdown .nav-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav {
+    min-height: 50px;
+    align-items: center;
 }
 
 .bnavbar {
@@ -89,6 +138,8 @@
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
+
+
 
 .nav-link.dropdown-toggle {
     cursor: pointer;
